@@ -1,0 +1,12 @@
+<?php    
+    
+include "connection.php";    
+    
+if(isset($_GET['id'])){    
+$sql = "delete from inquiry where id = '".$_GET['id']."'";    
+$result = mysql_query($sql);    
+}    
+    
+$sql = "select * from inquiry";    
+$result = mysql_query($sql);    
+?>    
